@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>S&J Grocery Store</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<!-- Shopping Cart Icon -->
+<div id="cart-icon">
+    🛒 <span id="cart-count">0</span>
+</div>
+<!-- Shopping Cart Sidebar -->
+<div id="cart-sidebar">
+    <div id="cart-header">
+        <h2>Shopping Cart</h2>
+        <button id="close-cart">✖</button>
+    </div>
+    <div id="cart-items">
+        <!-- Items will be dynamically added here -->
+    </div>
+    <button id="checkout">Checkout</button>
+	<script src="script.js"></script>
+	
+<div id="cart-sidebar">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p id="cart-total">Total: $0.00</p>
+    <span id="cart-counter">0</span>
+    <button onclick="closeCart()">Close</button>
+</div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+    <div id="cart-items"></div> <!-- Conteneur pour les articles du panier -->
+    <div id="cart-total">Total: $0.00</div> <!-- Affichage du total du panier -->
+    <div id="cart-counter">0</div> <!-- Affichage du nombre d'articles dans le panier -->
+    <button id="close-cart">Close Cart</button> <!-- Bouton pour fermer le panier -->
+</div>
+
+</div>
+
+
+</div>
+
+  <header>
+    <div class="logo">
+      <img src="iconlogo.png" alt="S&J Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#order">Place an Order</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to S&J Grocery Store</h1>
+      <p>Your One-Stop Shop for Fresh Produce and Groceries</p>
+      <a href="#products" class="btn">Explore Our Products</a>
+    </div>
+  </section>
+
+  <section class="about dark-theme">
+    <div class="about-content">
+      <h2>About S&J Grocery Store</h2>
+      <p>At S&J, funded by Joseph Azouri and Stephan Sleyman, we offer a wide range of fresh produce, high-quality grocery products, and household essentials. Our mission is to provide you with everything you need for your kitchen and home at competitive prices.</p>
+      <p>We are committed to offering locally sourced items, ensuring freshness, and making your grocery shopping experience both convenient and enjoyable.</p>
+      <a href="#products" class="btn">Explore Our Products</a>
+    </div>
+    <div class="about-image">
+      <img src="about-image.jpg" alt="About Image">
+    </div>
+  </section>
+
+  <section class="products">
+    <h2>Our Categories:</h2>
+    <div class="product-categories">
+        <div class="category-item">
+            <a href="snacks.html">
+                <img src="snacks.jpg" alt="Snacks">
+                <h3>Snacks</h3>
+            </a>
+        </div>
+        <div class="category-item">
+            <a href="personal-care.html">
+                <img src="personal-care.jpg" alt="Personal Care">
+                <h3>Personal Care</h3>
+            </a>
+        </div>
+        <div class="category-item">
+            <a href="house-care.html">
+                <img src="house-care.jpg" alt="House Care">
+                <h3>House Care</h3>
+            </a>
+        </div>
+        <div class="category-item">
+            <a href="bakery.html">
+                <img src="bakery.jpg" alt="Bakery">
+                <h3>Bakery</h3>
+            </a>
+        </div>
+        <div class="category-item">
+            <a href="basic-necessities.html">
+                <img src="basic-necessities.jpg" alt="Basic Necessities">
+                <h3>Basic Necessities</h3>
+            </a>
+        </div>
+        <div class="category-item">
+            <a href="pet-care.html">
+                <img src="pet-care.jpg" alt="Pet Care">
+                <h3>Pet Care</h3>
+            </a>
+        </div>
+        <div class="category-item">
+            <a href="fruits-vegetables.html">
+                <img src="fruits-vegetables.jpg" alt="Fruits & Vegetables">
+                <h3>Fruits & Vegetables</h3>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+  <section class="order">
+    <div class="order-form">
+      <h2>Place an Order</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+        <textarea name="message" placeholder="Additional Instructions or Order Details" rows="5"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Reviews</h2>
+    <div class="testimonial">
+      <img src="customer1.jpg" alt="Customer 1">
+      <p>"S&J Grocery Store has everything I need! The produce is always fresh, and the staff is super friendly. It's my go-to store for all my grocery needs!"</p>
+      <h4>John Doe</h4>
+    </div>
+    <div class="testimonial">
+      <img src="customer2.jpg" alt="Customer 2">
+      <p>"I love the variety of organic products S&J offers. It's a one-stop shop for all my healthy eating needs!"</p>
+      <h4>Jane Smith</h4>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="gallery1.jpg" alt="Image 1">
+      </div>
+      <div class="image-item">
+        <img src="gallery2.jpg" alt="Image 2">
+      </div>
+      <div class="image-item">
+        <img src="gallery3.jpg" alt="Image 3">
+      </div>
+      <div class="image-item">
+        <img src="gallery4.jpg" alt="Image 4">
+      </div>
+    </div>
+  </section>
+
+    <section class="contact">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>542, Fanar, Sainte Famille Fanar</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone-alt"></i>
+          <p>+71089007  71674125</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <p>info@sjgrocery.com</p>
+        </div>
+      </div>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="iconlogo.png" alt="Logo">
+      </div>
+      <nav class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Place an Order</a>
+        <a href="#">send a message</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <p class="footer-text">&copy; 2025 S&J Grocery Store. Copyrights reserved.</p>
+  </footer>
+  <div id="product-container">
+    <?php include 'fetch-products.php'; ?>
+</div>
+
+</body>

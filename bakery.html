@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<div id="cart-icon">
+    🛒 <span id="cart-counter">0</span>
+</div>
+
+<div id="cart-sidebar">
+    <button id="close-cart">Close</button>
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p id="cart-total">Total: $0.00</p>
+</div>
+
+  <title>Bakery - S&J Grocery Store</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+    <h1>Bakery</h1>
+  </header>
+  
+  <section class="category">
+    <h2>Freshly Baked Goods</h2>
+    <p>Indulge in our fresh breads, pastries, and other delicious baked treats.</p>
+  </section>
+  <script src="cart.js"></script>
+
+</body>
+</html>
+<div class="product">
+    <div class="product-image">
+        <img src="lebanesebread.jpg" alt="Lebanese Bread (Bag x6)">
+    </div>
+    <div class="product-details">
+        <h3>Lebanese Bread (Bag x6)</h3>
+        <p class="price">$1.99</p>
+        <button class="add-to-cart" onclick="addToCart('Lebanese Bread (Bag x6', 1.99)">Add to Cart</button>
+    </div>
+</div>
+<div class="product">
+    <div class="product-image">
+        <img src="Croissantbox.jpg" alt="Croissant Box">
+    </div>
+    <div class="product-details">
+        <h3>Fresh chocolate/Cheese Croissant Box</h3>
+        <p class="price">$7.99</p>
+        <button class="add-to-cart" onclick="addToCart('Fresh chocolate Croissant Box', 7.99)">Add to Cart</button>
+    </div>
+</div>
+<div class="product">
+    <div class="product-image">
+        <img src="Petitfour.jpg" alt="Petit Four Box (varied)">
+    </div>
+    <div class="product-details">
+        <h3>Petit Four Box (varied)</h3>
+        <p class="price">$9.99</p>
+        <button class="add-to-cart" onclick="addToCart('Petit Four Box (varied)', 9.99)">Add to Cart</button>
+    </div>
+</div>
+<div class="product">
+    <div class="product-image">
+        <img src="Garlicbread.jpg" alt="Toasted Garlic Bread">
+    </div>
+    <div class="product-details">
+        <h3>Toasted Garlic Bread</h3>
+        <p class="price">$5.60</p>
+        <button class="add-to-cart" onclick="addToCart('Toasted Garlic Bread', 5.60)">Add to Cart</button>
+    </div>
+</div>
+<div class="product">
+    <div class="product-image">
+        <img src="ricecake.jpg" alt="Salt Free Rice Cake">
+    </div>
+    <div class="product-details">
+        <h3>Salt Free Rice Cake</h3>
+        <p class="price">$2.99</p>
+        <button class="add-to-cart" onclick="addToCart('Salt Free Rice Cake', 2.99)">Add to Cart</button>
+    </div>
+</div>
+<div class="product">
+    <div class="product-image">
+        <img src="Englishcake.jpg" alt="Vanilla and Chocolate Cake (fresh)">
+    </div>
+    <div class="product-details">
+        <h3>Vanilla and Chocolate Cake (fresh)</h3>
+        <p class="price">$7.80</p>
+        <button class="add-to-cart" onclick="addToCart('Vanilla and Chocolate Cake (fresh)', 7.80)">Add to Cart</button>
+    </div>
+</div>
+
