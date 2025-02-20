@@ -101,4 +101,36 @@ function loadCart() {
     cart = JSON.parse(localStorage.getItem("cart")) || [];
     updateCartUI();
 }
+// Select the element
+const specialOffers = document.querySelector('.special-offers');
 
+// Function to check if the section is in view
+function checkInView() {
+    const rect = specialOffers.getBoundingClientRect();
+    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+        specialOffers.classList.add('visible');
+    }
+}
+
+// Add event listener for scroll
+window.addEventListener('scroll', checkInView);
+
+// Initial check if the section is already in view
+checkInView();
+
+const fireworks = document.querySelectorAll('.firework');
+
+fireworks.forEach(firework => {
+    const randomTop = Math.random();
+    const randomLeft = Math.random();
+
+    firework.style.setProperty('--random-top', randomTop);
+    firework.style.setProperty('--random-left', randomLeft);
+});
+
+const colors = ['#ff6600', '#ff0033', '#33cc33', '#3399ff'];
+
+fireworks.forEach(firework => {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    firework.style.backgroundColor = randomColor;
+});
