@@ -1095,3 +1095,96 @@ section:nth-of-type(4) {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Styling for the message sent page */
+.message-sent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    background-color: #f1f1f1; /* Light gray background for the page */
+}
+
+.message-window {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the box */
+    width: 80%;
+    max-width: 500px; /* Limit the width for larger screens */
+    text-align: center;
+}
+
+.message-window h1 {
+    color: green;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.message-window p {
+    color: gray;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+/* Styling for the message sent page */
+.message-sent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    background-color: #f1f1f1; /* Light gray background for the page */
+}
+
+.message-window {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the box */
+    width: 80%;
+    max-width: 500px; /* Limit the width for larger screens */
+    text-align: center;
+    transform: scale(0); /* Start with the window small */
+    animation: pop-up 0.6s ease-out forwards; /* Add pop-up animation */
+}
+
+/* Animation for the pop-up effect */
+@keyframes pop-up {
+    0% {
+        transform: scale(0);
+        opacity: 0; /* Start from invisible */
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1; /* End with full visibility */
+    }
+}
+
+.message-window h1 {
+    color: green;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.message-window p {
+    color: gray;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Styling for the cancel button */
+.message-window button {
+    background-color: #ff4d4d; /* Red background for emphasis */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the cancel button */
+.message-window button:hover {
+    background-color: #e63946; /* Darker red when hovered */
+}
+
