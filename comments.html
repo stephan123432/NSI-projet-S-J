@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="comments.css">
+</head>
+<body>
+
+    <div class="comments-container">
+        <h2>Customer Reviews</h2>
+        
+        <!-- Comment Input Area -->
+        <div class="comment-box">
+            <input type="text" id="commentInput" placeholder="Write your thoughts..." />
+            <button onclick="addComment()">Send</button>
+        </div>
+
+        <!-- Comment List -->
+        <div id="commentSection">
+            <!-- Existing Comments with Profile Images -->
+            <div class="comment">
+                <img class="profile-img" src="comment1.jpg" alt="Sarah's Profile" />
+                <p>Amazing service! Will order again!</p>
+            </div>
+            <div class="comment">
+                <img class="profile-img" src="comment2.jpg" alt="Mark's Profile" />
+                <p>Quick delivery, great customer service, and great products! 10/10</p>
+            </div>
+            <div class="comment">
+                <img class="profile-img" src="comment3.jpg" alt="Emily's Profile" />
+                <p>It was okay, but the products are way too expensive... :/</p>
+            </div>
+            <div class="comment">
+                <img class="profile-img" src="comment4.jpg" alt="Alex's Profile" />
+                <p>Fantastic store, love the variety!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="comments.js"></script>
+
+</body>
+</html>
