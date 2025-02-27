@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="categories.css">
+<link rel="stylesheet" type="text/css" href="fonts.css">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+<body class="orders">
+
+    <div class="order-container">
+        <h1>Order Pending!</h1>
+        <p>Your order has been received and is being processed.</p>
+
+        <div class="order-details">
+            <p><strong>Name:</strong> <span id="name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Phone:</strong> <span id="phone"></span></p>
+            <p><strong>Location:</strong> <span id="location"></span></p>
+            <p><strong>Delivery Date:</strong> <span id="date"></span></p>
+            <p><strong>Delivery Time:</strong> <span id="time"></span></p>
+            <p><strong>Additional Instructions:</strong> <span id="instructions"></span></p>
+        </div>
+
+        <p id="countdown">Time left before your order gets delivered: <span id="timer"></span></p>
+
+        <a href="index.html" class="back-btn">Back to Home</a>
+    </div>
+
+    <script src="orders.js"></script>
+
+</body>
+</html>

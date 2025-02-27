@@ -1,0 +1,72 @@
+/* General Page Styling */
+body {
+    background-color: #2F4F2F; /* Darker green */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Order Confirmation Window */
+.order-container {
+    max-width: 450px;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Headings */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2F4F2F;
+}
+
+/* Order Details */
+.order-details {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Countdown Timer */
+#countdown {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d9534f;
+    margin-bottom: 15px;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2F4F2F;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #1E3B1E;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1273,3 +1273,21 @@ body {
         opacity: 1;
     }
 }
+
+/* Apply the handwritten font to everything */
+body {
+    font-family: 'Caveat', cursive;
+}
+
+/* Make headings stand out */
+h1, h2, h3 {
+    font-family: 'Caveat', cursive;
+    font-weight: 700; /* Bold for titles */
+}
+
+/* Keep paragraphs readable with a lighter weight */
+p {
+    font-family: 'Caveat', cursive;
+    font-weight: 400; /* Normal for paragraphs */
+}
+

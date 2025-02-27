@@ -118,19 +118,21 @@ window.addEventListener('scroll', checkInView);
 // Initial check if the section is already in view
 checkInView();
 
-const fireworks = document.querySelectorAll('.firework');
+<script>
+document.getElementById("orderForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent actual form submission
+    
+    // Collect form data
+    let formData = new FormData(this);
+    let orderDetails = {};
+    formData.forEach((value, key) => {
+        orderDetails[key] = value;
+    });
 
-fireworks.forEach(firework => {
-    const randomTop = Math.random();
-    const randomLeft = Math.random();
+    // Store data in localStorage
+    localStorage.setItem("orderData", JSON.stringify(orderDetails));
 
-    firework.style.setProperty('--random-top', randomTop);
-    firework.style.setProperty('--random-left', randomLeft);
+    // Redirect to orders.html
+    window.location.href = "orders.html";
 });
-
-const colors = ['#ff6600', '#ff0033', '#33cc33', '#3399ff'];
-
-fireworks.forEach(firework => {
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    firework.style.backgroundColor = randomColor;
-});
+</script>

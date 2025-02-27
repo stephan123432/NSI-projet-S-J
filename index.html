@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="fonts.css">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
   <title>SJ Grocery Store</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<!-- Shopping Cart Icon -->
-<div id="cart-icon">
-    🛒 <span id="cart-count">0</span>
-</div>
+<a href="cart.html">
+    <div id="cart-icon">
+        🛒 <span id="cart-counter">0</span>
+    </div>
+</a>
 <!-- Shopping Cart Sidebar -->
 <div id="cart-sidebar">
     <div id="cart-header">
@@ -152,7 +155,7 @@
 
   <section class="order">
     <div class="order-form">
-      <h2>Place an Order</h2>
+      <form id="orderForm" action="orders.html" method="GET">
       <form>
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
@@ -245,6 +248,7 @@
       </div>
     </div>
     <p class="footer-text">&copy; 2025 SJ Grocery Store. Copyrights reserved.</p>
+	<p class="footer-text">Site developed by Stephan Sleyman and Joseph Azouri.</p>
   </footer>
   <div id="product-container">
     <?php include 'fetch-products.php'; ?>

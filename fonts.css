@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+
+body {
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, li, button, input, textarea {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400; /* You can change to 500 if you want it slightly thicker */
+}
+
+button {
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500; /* Slightly bolder for visibility */
+}
+
+/* Ensuring buttons have the font */
+button {
+    font-size: 16px; /* Adjust as needed */
+    font-family: 'Pacifico', cursive;
+}
+/* Apply the handwritten font to everything */
+body {
+    font-family: 'Caveat', cursive;
+}
+
+/* Make headings stand out */
+h1, h2, h3 {
+    font-family: 'Caveat', cursive;
+    font-weight: 700; /* Bold for titles */
+}
+
+/* Keep paragraphs readable with a lighter weight */
+p {
+    font-family: 'Caveat', cursive;
+    font-weight: 400; /* Normal for paragraphs */
+}
+/* Apply the handwritten font to everything */
+body {
+    font-family: 'Caveat', cursive;
+}
+
+/* Make headings stand out */
+h1, h2, h3 {
+    font-family: 'Caveat', cursive;
+    font-weight: 700; /* Bold for titles */
+}
+
+/* Keep paragraphs readable with a lighter weight */
+p {
+    font-family: 'Caveat', cursive;
+    font-weight: 400; /* Normal for paragraphs */
+}
