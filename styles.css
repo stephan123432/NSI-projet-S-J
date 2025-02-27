@@ -1274,20 +1274,27 @@ body {
     }
 }
 
-/* Apply the handwritten font to everything */
-body {
-    font-family: 'Caveat', cursive;
+.about-image img {
+    width: 100%;
+    max-width: 500px; 
+    border: 15px solid ##FFFFFF; 
+    border-radius: 20px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    background-color: #fff; 
+    padding: 10px; 
 }
 
-/* Make headings stand out */
-h1, h2, h3 {
-    font-family: 'Caveat', cursive;
-    font-weight: 700; /* Bold for titles */
+.about-image img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); 
 }
 
-/* Keep paragraphs readable with a lighter weight */
-p {
-    font-family: 'Caveat', cursive;
-    font-weight: 400; /* Normal for paragraphs */
+.about-image {
+    background-image: url('wood-texture.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 10px;
 }
 
