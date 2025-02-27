@@ -1297,4 +1297,49 @@ body {
     border-radius: 20px;
     padding: 10px;
 }
+.about-content {
+    position: relative; /* Ensures the content is positioned correctly */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* White background with 10% opacity */
+    border-radius: 10px; /* Rounded corners for the box */
+    max-width: 600px; /* Limit the width of the box */
+    margin: 0 auto; /* Center the box */
+}
+
+.about-content h2, .about-content p {
+    color: white; /* Keep the text color white */
+}
+
+.about-content {
+    position: relative; /* Ensures the content is positioned correctly */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* White background with 10% opacity */
+    border-radius: 10px; /* Rounded corners for the box */
+    max-width: 600px; /* Limit the width of the box */
+    margin: 0 auto; /* Center the box */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the scaling effect */
+}
+
+.about-content:hover {
+    transform: scale(1.05); /* Increase the size of the box by 5% on hover */
+}
+
+.about-content h2, .about-content p {
+    color: white; /* Keep the text color white */
+}
+
+section h2 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px; /* Padding inside the box */
+    background-color: rgba(255, 255, 255, 0.3); /* Background with 30% opacity */
+    border-radius: 5px; /* Rounded corners for the box */
+    color: white; /* Text color */
+    margin-bottom: 20px; /* Space below the title */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the scaling effect */
+}
+
+section h2:hover {
+    transform: scale(1.05); /* Slightly increase the size of the title on hover */
+}
 
